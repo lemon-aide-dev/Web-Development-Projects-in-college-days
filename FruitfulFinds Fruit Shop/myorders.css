@@ -1,0 +1,106 @@
+
+*{
+	font-family: arial;
+}.top-part{
+	width: inherit;
+	height: 70px;
+	padding: 5px;
+	color: white;
+	background-color: #0A5237;
+	margin: none;
+	
+}
+.top-part h3{
+	font-size: 100%;
+}
+.header .login_button{
+	float: right;
+	padding-top: 2%;
+	padding-right: 3%;
+}
+.header{
+	background-color: white;
+	height: 70px;
+	box-shadow:0px 15px 10px -15px #888888;
+	top:0;
+	position: sticky;
+	color: black;
+}
+
+.header .cart{
+	float: right;
+	padding-top: 1%;
+	padding-right: 2%;
+	width: 28%;
+}
+
+.header a{
+	text-decoration: none;
+	padding-bottom: 2%;
+	color: black;
+	padding-right: 3.4%;
+}
+.header i{
+	font-size: 35px;
+
+}
+.header img{
+	padding-left: 7%;
+	width: 12%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	
+}
+
+.body{
+	padding: 2%;
+	height: 100%;
+	border-style: none;
+}
+
+button{
+	color: white;
+	background-color: #0A5237;
+	border: none;
+	width: 20%;
+	padding: 1%;
+	font-size: 15px;
+}
+table{
+	height: 100%;
+}
+thead .inbox{
+  
+  color: black;
+
+  font-size: 18px;
+  width: 100%;
+}
+
+tr{
+	height: 20px;
+	margin: none;
+	font-size: 25px;
+}
+td{
+	
+	text-align: center;
+	width: auto;
+	
+  	border-bottom: 1px solid #888888;
+}
+.footer{
+	height: 50px;
+	padding: 1%;
+	bottom: 0;
+	width: auto;
+	color: white;
+	background-color: #0A5237;
+}
+.footer p{
+	font-size: 17px;
+
+}

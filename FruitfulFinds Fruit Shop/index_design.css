@@ -1,0 +1,146 @@
+
+*{
+	font-family: arial;
+}
+.head{
+	position: sticky;
+	top: 0;
+}
+.top-part{
+	width: inherit;
+	height: 60px;
+	color: white;
+	padding-top: 1px;
+	padding-bottom: 3px;
+	background-color: #0A5237;
+	margin: none;
+	
+}
+.top-part p{
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.header .login_button{
+	float: right;
+	padding-top: 2%;
+	padding-right: 3%;
+}
+.header{
+	background-color: white;
+	border-bottom: 1px solid #D3D3D3;
+	color: black;
+	height: 70px;
+}
+.header .cart{
+	float: right;
+	padding-top: 1%;
+	padding-right: 5%;
+	width: 26%;
+
+}
+.header a{
+	text-decoration: none;
+	padding-bottom: 2%;
+	color: black;
+	padding-right: 5%;
+}
+.header i{
+	font-size: 35px;
+
+}
+.header img{
+	padding-left: 7%;
+	width: 12%;
+}
+body{
+	padding: 0;
+	margin: 0;
+
+	
+}
+.slideshow-container {
+	padding-top: 1%;
+  width: inherit;
+  height: 50%;
+}.slide {
+  width: 100%;
+  height: 50%;
+  display: none;
+}
+.slide img{
+	width: 80%;
+	height: 410px;
+}
+.slide:first-child {
+  display: block;
+}.prev, .next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 1.5s fade;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.body{
+	height: auto;
+	background-color: #E2E0D7;
+}
+.promotion img{
+	width: 100%;
+	height: 150px;
+
+}
+.content{
+	display: grid;
+    margin-bottom: 2rem;
+    padding: 3%;
+	grid-template-columns: repeat(5, 3fr);
+    grid-gap: 1rem;
+}
+.card{
+	box-shadow: 0px 6px 8px -4px rgb(0 0 0 / 30%);
+    background: #fff;
+    height: auto;
+
+}
+.card img{
+	width: 100%;
+}
+.card p{
+	text-align: center;
+}
+.card button{
+	width: 100%;
+	height: 40px;
+	border: none;
+	text-align: center;
+	color: white;
+	background-color: #0A5237;
+}
+.card a{
+	text-decoration: none;
+	color: black;
+}
+.footer{
+	margin-top: -3%;
+	height: 50px;
+	padding: 1%;
+	color: white;
+	background-color: #0A5237;
+	
+}
+.footer p{
+	font-size: 17px;
+
+}
+
+

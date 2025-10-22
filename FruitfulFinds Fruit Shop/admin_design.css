@@ -1,0 +1,187 @@
+*{
+	font-family: arial;
+}
+.header .login_button{
+	float: right;
+	padding-top: 2%;
+	padding-right: 3%;
+}
+.header{
+	height: 70px;
+	box-shadow:0px 15px 10px -15px #888888;
+	position: sticky;
+	color: black;
+	background-color: white;
+}
+
+.header .cart{
+	float: right;
+	padding-top: 1%;
+	padding-right: 3%;
+	width: 15%;
+}
+.nav{
+	padding-top: 1%;
+	float: left;
+	width: 10%;
+	padding-left: 2%;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  padding-top: 3%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #353535;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  display: block;
+  font-weight: bold;
+  transition: 0.1s;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.header a{
+	text-decoration: none;
+	padding-bottom: 2%;
+	color: black;
+	padding-right: 1%;
+}
+.header i{
+	font-size: 35px;
+
+}
+.header img{
+	padding-left: 7%;
+	width: 12%;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background-image: url('ADS/3.png');
+	background-size: 100%;
+}
+.body{
+	padding-left: 2%;
+	width: 96%;
+	height: 100%;
+	border-style: none;
+
+}
+
+.page-content {
+    padding: 1.3rem 1rem;
+}
+.analytics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: -3%;
+    margin-bottom: 2rem;
+}
+
+.card {
+    box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 50%);
+    border-style: solid;
+    border-color: rgb(0 0 0 / 50%);
+    border-width: 1px;
+    height: 80%;
+    background: #fff; 
+    padding-right: 15%;
+    padding-left: 15%;
+    border-radius: 3px;
+}
+
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5%;
+    align-items: center;
+}
+
+.card-head h3 {
+	padding-left: 4%;
+    color: #333;
+
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card-head span {
+    font-size: 60px;
+    color: var(--text-grey);
+}
+.card h4{
+	margin-top: -7%;
+	padding-bottom: 7%;
+	font-size:100%;
+	color: #333;
+	text-align: right;
+}
+
+.body thead .inbox{
+  
+  color: black;
+
+  font-size: 20px;
+  width: 100%;
+}
+.table a{
+	text-decoration: none;
+	font-size: 30px;
+	padding: 0;
+}
+.inbox th{
+	background-color: red;
+	border-radius: 10px;
+	color: whitesmoke;
+	font-weight: bold;
+}
+.body tr{
+	height: 20px;
+	margin: none;
+	font-size: 30px;
+}
+.body td{
+	
+	text-align: center;
+	width: auto;
+	
+  	border-bottom: 1px solid black;
+}
+
+.footer{
+	height: 50px;
+	padding: 1%;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFCD4A;
+}
+.footer p{
+	font-size: 17px;
+
+}

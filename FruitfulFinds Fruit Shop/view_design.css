@@ -1,0 +1,118 @@
+
+*{
+	font-family: arial;
+}.top-part{
+	width: inherit;
+	height: 70px;
+	padding: 5px;
+	color: white;
+	background-color: #0A5237;
+	margin: none;
+	
+}
+.top-part h3{
+	font-size: 100%;
+}
+.header .login_button{
+	float: right;
+	padding-top: 2%;
+	padding-right: 3%;
+}
+.header{
+	height: 70px;
+	box-shadow:0px 15px 10px -15px #888888;
+	
+	color: black;
+}
+
+.header .cart{
+	float: right;
+	padding-top: 1%;
+	padding-right: 5%;
+	width: 15%;
+}
+
+.header a{
+	text-decoration: none;
+	padding-bottom: 2%;
+	color: black;
+	padding-right: 5%;
+}
+.header i{
+	font-size: 35px;
+
+}
+.header img{
+	padding-left: 7%;
+	width: 12%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	
+}
+
+.body{
+	padding: 5%;
+	height: 100%;
+}
+
+.body button{
+	background-color: #FFCD4A;
+	border: none;
+	width: 20%;
+	padding: 1%;
+	font-size: 15px;
+}
+
+.footer{
+	height: 50px;
+	padding: 1%;
+	bottom: 0;
+	color: white;
+	background-color: #0A5237;
+}
+.footer p{
+	font-size: 17px;
+
+}
+
+.body{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+}
+.body img{
+	width: 100%;
+}
+.body input{
+	font-weight: bold;
+}
+.mainbutt input{
+	width: 70%;
+	padding: 2%;
+	font-size: 16px;
+}
+.more{
+	width: 50%;
+	height: 40.6px;
+	padding: 1%;
+}
+.buy{
+	width: 19.5%;
+	height: 40.5px;
+	padding: 1%;
+}
+
+.buttons {
+	text-align: right;
+	padding-right: 5%;
+}
+.body input{
+	color: white;
+	background-color: #0A5237;
+	border: none;
+	font-weight: bold;
+
+}
+

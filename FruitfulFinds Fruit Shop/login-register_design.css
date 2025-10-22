@@ -1,0 +1,105 @@
+
+*{
+	font-family: arial;
+}.top-part{
+	width: inherit;
+	height: 70px;
+	padding: 5px;
+	color: white;
+	background-color: #0A5237;
+	margin: none;
+	
+}
+.top-part h3{
+	font-size: 100%;
+}
+.header .login_button{
+	float: right;
+	padding-top: 2%;
+	padding-right: 3%;
+}
+.header{
+	height: 70px;
+	box-shadow:0px 15px 10px -15px #888888;
+	position: sticky;
+	color: black;
+	background-color: white;
+}
+
+.header .cart{
+	float: right;
+	padding-top: 1%;
+	padding-right: 5%;
+	width: 25%;
+	background-color: white;
+}
+
+.header a{
+	text-decoration: none;
+	padding-bottom: 2%;
+	color: black;
+	padding-right: 5%;
+}
+.header i{
+	font-size: 35px;
+
+}
+.header img{
+	padding-left: 7%;
+	width: 12%;
+}
+body{
+	padding: 0;
+	margin: 0;
+	
+	
+}
+.body 
+{
+	background-image: url('ADS/3.png');
+	background-size: 100%;
+}
+.card-body{
+		width: 80%;
+		padding-top: 4%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		
+		}
+.card-body input{
+	width: 50%;
+	height: 30px;
+	font-size: 20px;
+	padding: 0.5%;
+	margin: 1%;
+	border-style: solid;
+	opacity: 80%;
+	border-color: #262928;
+	border-width: 1px; 
+	border-radius: 5px;
+}
+.card-body button{
+	color: white;
+	background-color: #0A5237;
+	border: none;
+	width: 13%;
+	padding: 1%;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.content{
+	height: inherit;
+}
+
+.footer{
+	height: 50px;
+	padding: 1%;
+	color: white;
+	background-color: #0A5237;
+}
+.footer p{
+	font-size: 17px;
+
+}
