@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="\paws_claws\css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="login.css">
+	<title>Login</title>
+
+
+    <style>
+
+        
+    </style>
+ 
+</head>
+<body>
+    <div class="header">
+        <div class="animal">
+            <img src="\paws_claws\login-register-images\wdog.png">
+            <img src="\paws_claws\login-register-images\wcat.png">
+            <img src="\paws_claws\login-register-images\wbird.png">
+            <img src="\paws_claws\login-register-images\wrep.png">
+        </div>
+    </div>
+	<div class="container container-fluid ">
+        
+			<div  id="logo">
+                <p><center>We ensure top quality and affordable products</center></p>
+				<img src="\paws_claws\otherimages\PAWS-removebg.png" style="width: 140%; height: auto;  ">
+
+			</div>	
+
+		<div class="container-sm">
+			<div class="col-sm-4 p-3 card " >
+	            <form action="login_validation.php" id="loginForm" class="form card-header" method="POST">
+	                    <img src="\paws_claws\otherimages\claw.png" class="float-end" id="minilogo">
+	                    <h2 id="login_txt" style=" font-size-adjust: 4vw;"><b>Log In</b></h2> 
+                                  
+	                    <br>
+	                    <div class="card-body">
+		                    <input type="text" id="email" name="email" placeholder="Enter Username" required>
+		                    <br>
+		                    <br>
+		                    <input type="password" id="password" name="password"placeholder = "Password" required>
+		                    <br>
+		                    <br>
+		                 
+		                    <button type="Submit" class = "btn btn-dark" id="login_button" >Login</button>
+		                    <br>
+
+		                    <!-- <p class="float-start" style="font-size:13px;"><a href="#">Forgot Password</a></p>  -->
+	                    </div>
+                        <br>
+	                  	  
+	                    <div class="card-footer">
+	                        <p style="text-align: center;">New here?<a href="register.html">Sign up here</a></p>
+	                    </div>
+	                    
+	                
+	            </form>
+	            <br>
+	        </div>
+	    </div>
+        <br>
+        <br>
+    </div>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Paws&Claws. All rights reserved.</span></div>
+    </div>
+    
+</body>
+</html>

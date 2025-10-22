@@ -1,0 +1,84 @@
+body{
+           height: 100%;
+           width: 100%;
+        }
+        .card{
+            background-color: #E8E9D5;
+            margin-right: 3%;
+            margin-top: 8%;
+            margin-left:auto;
+            text-align: center;
+            max-width: 98vw;
+            max-height: auto;
+            height: 430px auto;
+            align-content: right;
+            
+        }
+        input{
+            font-size: 90%;
+            width: 100%;
+            height: 45px; 
+        }
+        #login_txt{
+            font-size: 5vh ;
+            text-align: left;
+
+        }
+        #login_button{
+            width: 100%;
+            height: 50px;
+        }
+        #logo
+        {
+            position: absolute;
+            align-content: left;
+            max-width: 22vw;
+            max-height: auto;
+            border: none;
+            margin-left: 8%;
+        }
+
+        #minilogo{
+            width: 50px;
+            height: 55px;
+        }
+        #logo.p{
+            font-size:6vw;
+            text-align: center;
+        }
+        
+      #ab{
+        width:100%; 
+        height: 9vh;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .header{
+        background-color: #494943;
+        height: 20%;
+        width: 100%;
+      }
+        .header .animal{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 18%;
+      } 
+       .header .animal img{
+        width: 6%;
+        margin-left: 10%;
+       }
+       .footer {
+            position: inherit;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: #494943;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.2rem;
+          }

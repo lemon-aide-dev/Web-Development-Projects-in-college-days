@@ -1,0 +1,492 @@
+body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+      background-color: #FAF6F0;
+    }
+
+    .header{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 2px;
+      height: auto;
+      box-shadow: 0 0 10px rgba(0,0,0, 1);
+      position: fixed;
+      margin-right: 20vw;
+      background-color: #494943;
+      flex-wrap: wrap;
+      z-index: 3;
+    }
+    .header img{
+      max-width: auto;
+      max-height: 6vw;
+     
+    }
+    
+    
+/*    para sa tab section*/
+
+    .tab {
+      overflow: hidden;
+      border: none;
+      outline: none;
+      width: 55%;
+      margin: 1vw;
+      background-color: inherit;
+      align-items: center;
+      height: auto;
+      margin-left: none;
+    }
+    .tab button {
+      font-size: 1em;
+      background-color: inherit;
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 1vw ;
+      transition: 0.3s;
+      max-width: 100%;
+      margin-right: 1vw;
+      margin-left: 3.5vw;
+      border-radius: 20px;
+    }
+
+    .tab button:hover {
+      background-color: #7D7D76;
+    }
+
+    .tab button.active {
+      background-color: #343430;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 10px 12px;
+      border: none;
+      background-color:  #FAF6F0;
+      width: 88%;
+      margin-left: 2%;
+
+    }
+    .tabcontent.active{
+      display: block;
+    }
+    .tabcontent.active.pic img{
+      padding-top: 20%;
+      padding-left: 20%;
+      height: 100%;
+      width: 100%;
+    }
+
+
+
+
+    /* product */
+    .product .product-card{
+      z-index: 1;
+      background: #d2cfce;
+      position: relative;
+      width: 200px;
+      height: 400px;
+      margin: 15px;
+      border-radius: 10px;
+
+    }
+    .container{
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap: wrap;
+      margin: 1% 1% auto;
+    }
+    .product .product-card:before{
+      content: '';
+      background: rgba(255, 255, 255, 0.4);
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .product .product-card .product-img{
+      z-index: 1;
+      position: absolute;
+      max-height: 200px;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .product .product-card .name{
+      z-index: 2;
+      color: black;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 70px;
+      font-size: 30px;
+      letter-spacing: 1px;
+      
+      font-family: sans-serif;
+    }
+
+    .product .product-card .price{
+      z-index: 2;
+      color: black;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 60px;
+      font-size: 25px;
+      font-family: sans-serif;
+    }
+
+    .product .product-card .popup-btn{
+      z-index: 2;
+      color: #fff;
+      background: #555;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+
+/* para sa modal na pop up */
+    .product .popup-view{
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.5);
+      position: fixed;
+      padding-top: 20%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .product .popup-view.active{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .product .popup-card{
+      position: relative;
+      display: flex;
+      width: 600px;
+      height: 400px;
+      margin: 20px;
+    }
+
+    .product .popup-card .product-img{
+      z-index: 2;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      height: 90%;
+      transform: translateY(25px);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .product .popup-card .product-img img{
+      z-index: 2;
+      position: relative;
+      width: 400px;
+      left: -50px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .product .popup-card .info{
+      z-index: 2;
+      background: rgb(230,230,250);
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .product .popup-card .close-btn{
+      color: #555;
+      z-index: 3;
+      position: absolute;
+      right: 0;
+      font-size: 25px;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .product .popup-card .info h2{
+      font-size: 19px;
+       text-transform: uppercase;
+      line-height: 20px;
+      margin: 10px;
+    }
+
+    .product .popup-card .info span{
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    .product .popup-card .info p{
+      font-size: 15px;
+      margin: 10px;
+    }
+
+    .product .popup-card .info .price{
+      font-size: 18px;
+      font-weight: 300;
+      margin: 10px;
+    }
+
+    .product .popup-card .info .add-cart-btn{
+      color: #000;
+      background: #2222;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      margin: 10px auto;
+      padding: 10px 50px;
+      border-radius: 20px;
+    }
+
+    .product .popup-card .info .add-wish{
+      color: #09D02;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+
+/* para kapag maliit yung screen */
+    @media (max-width: 900px){
+      .product .product-card{
+        margin-left: 20%;
+        width: 300px;
+      }
+      .product .product-card .product-img{
+        z-index: 1;
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        transform: translate(-50%, -50%);
+      }
+      .product .popup-card{
+        flex-direction: column;
+        padding-top: 20%;
+        width: 400px;
+        height: auto;
+         position: relative;
+        display: flex;
+        margin-left: 20%;
+        }
+      .product .popup-card .product-img{
+        z-index: 2;
+        width: 60%;
+        height: 90px;
+        transform: translateY(0);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+      }
+      .product .popup-card .product-img img{
+        left: initial;
+        max-width: 90%;
+      }
+      .product .popup-card .info{
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .product .popup-card .info h2{
+        margin: 20px 5px 5px 5px;
+        font-size: 16px;
+      }
+      .product .popup-card .info h2 span{
+        font-size: 13px;
+      }
+      .product .popup-card .info p{
+        margin: 5px;
+        font-size: 13px;
+      }
+      .product .popup-card .info .price{
+        margin: 5px;
+        font-size: 15px;
+      }
+      .product .popup-card .info .add-cart-btn{
+        margin: 5px auto;
+        padding: 5px 40px;
+        font-size: 14px;
+      }
+      .product .popup-card .close-btn{
+        padding-right:  9%;
+        padding-top: 20%;
+        z-index: 4;
+        font-size: 25px;
+      }
+        .header .icons p{
+          display: none;
+        }
+        .slider-wrapper{
+          padding-top: 45px;
+        }
+    }
+
+
+/*
+    .dropdown{
+      font-family: Arial;
+      margin-right: auto;
+      margin-left: 5vw;
+      position: relative;
+    }
+    .dropdown b{
+      align-content: left;
+      color: white;
+      max-width: 100%;
+      font-size: 0.9em;
+      margin-top: 10px;
+      margin-right: 0.3vw;
+    }
+     #img_user{
+      color: white;
+      max-width: 80%;
+      font-size: 0.8em;
+      margin-top: 14px;
+      margin-right: 3vw;
+      margin-left: 4vw;
+     }
+
+    .dropdown img{
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 1px;
+    }
+    .dropdown button{
+      background-color: transparent;
+      color: black;
+      cursor: pointer;
+      border: none;
+    }
+    .dropdown a{
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 5px 15px;
+    }
+    .dropdown .content{
+      display: none;
+      font-size: 15px;
+      justify-content: space-between;
+      background-color: #FAF6F0;
+      position: absolute;
+      min-width: 120px;
+
+      box-shadow: 2px 2px 10px black;
+    }
+    .dropdown:hover .content{
+      display: block;
+    }
+
+    .dropdown a:hover {
+       align-content: right;
+       background-color: #c3c9d4;
+       font-weight: 600;
+    }
+    */
+    .slider-wrapper{
+      position: relative;
+      max-width: 90rem;
+      margin-left: 20%;
+      margin-top: 10%;
+    }
+    .slider{
+      display: flex;
+      aspect-ratio: 16/9;
+      overflow-x: auto;
+      width: 60vw;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      border-radius: 0.5rem;
+    }
+    .slider-wrapper.slider img{
+      flex: 8 0 100%;
+      
+      scroll-snap-align: start;
+      object-fit: cover;
+    }
+    .slider-nav{
+      display: flex;
+      column-gap: 1rem;
+      position: absolute;
+      bottom: 1.25rem;
+      left: 42%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .slider-nav a{
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: #d2cfce;
+      opacity: 0.75;
+      transition: opacity ease 250ms;
+    }
+    .slider-nav a:hover{
+      opacity: 1;
+    }
+      .footer {
+      position: inherit;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+      background: #494943;
+      color: white;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+/*para sa icons sa navbar*/
+.header div.icons{
+  padding-right: 4%;
+}
+.header div.icons p{
+
+  color: white;
+}
