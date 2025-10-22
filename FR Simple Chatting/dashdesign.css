@@ -1,0 +1,102 @@
+footer {
+    padding-top: 30px;
+    background-color: #292c2f;
+    color: #bbb;
+}
+
+footer a {
+    color: #999;
+    text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration:none;
+    border-bottom:1px dotted #999;
+}
+
+/* para sa name ng user*/
+.title{
+    font-size: 4.5em;
+}
+
+
+/*para sa may table sa dashboard*/
+.fixTableHead{
+    overflow-y: auto;
+    height: 480px;
+    
+}
+.fixTableHead,thead, th{
+    position: sticky;
+    top: 0;
+}
+table{
+    border-collapse: collapse;
+    background-color: #aaa;
+    border-color: #4b261d;
+
+   }
+   tbody{
+    
+    
+    background-color: #ecd9c9;
+   }
+   td,tr{
+    padding:8px 15px;
+    border: 2px #4b261d;
+    border-collapse: collapse;
+   
+   }
+   thead{
+    position:sticky;
+    border-color: none;
+    border-collapse: collapse;
+   }
+
+   #inbox{
+    background-image: linear-gradient(to bottom right, #52331f 26%, #3d2313 48%,rgb(44, 28, 11) 70%);
+    border-color: #3d1f16; 
+    border-radius: 15px;}
+    
+
+
+     .pulse-button{
+        
+        font-size: 19px;
+        width: 200px;
+        height: 50px;
+        border-radius: 40px;
+        animation: pulse 2s ease infinite;
+        background: #462a1b;
+        cursor: pointer;
+        
+   }
+    .button-container-div{
+        text-align: center;
+    }
+
+   @keyframes pulse{
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+   
+    50% {
+        transform: scale(0.7);
+        opacity: 0.8;
+    }}
+
+    body{
+        background-size: fill;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to bottom right, #d3a384 36%, #bb7d5a 58%,#6b412e 100%);
+     }
+
+
+  
+     .card{
+        border: #e65252;
+        background-color: #b67a6a;
+        box-shadow: 13px 13px 7px #574236;
+     }

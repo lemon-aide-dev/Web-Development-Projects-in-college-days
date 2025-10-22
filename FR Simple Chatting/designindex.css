@@ -1,0 +1,109 @@
+
+    body{
+        background-image: linear-gradient(to bottom right, #f5f0e8 36%, #d6c6bd 58%,#b1a291 100%);
+    }
+     .card{
+     	background-image: linear-gradient(to bottom right, #f8eace 36%, #dab4a3 58%,#99745b 100%);
+     	opacity: 0.9;
+        box-shadow: 13px 13px 7px #4e4339;
+     }
+/* para sa footer */
+     footer {
+        padding-top: 30px;
+        background-color: #292c2f;
+        color: #bbb;
+    }
+
+    footer a {
+        color: #999;
+        text-decoration:none;
+    }
+
+    footer a:hover, footer a:focus {
+        color: #aaa;
+        text-decoration:none;
+        border-bottom:1px dotted #999;
+    }
+/* para sa button sa main */
+	#pindot{
+		background-color: #803c27;
+	}
+    /* effects sa buttons */
+    
+    #pindot{
+        cursor: pointer;
+        outline: none;
+        border-radius: 15px;
+
+        }
+      
+    a:hover {
+        background-color: #754b33 
+    }
+
+    #pindot:active {
+        background-color: #572a1c ;
+        box-shadow: 0 5px #362827 ;
+        transform: translateY(4px);
+    } 
+    
+    
+/* para sa text area */
+	label,
+    textarea {
+        font-size: 16px;
+        letter-spacing: 1px;
+        opacity: 100%;
+    }
+
+    textarea {
+        padding: 10px;
+        max-width: 100%;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ebcc;
+        box-shadow: 2px 2px 2px #bd957d;
+        
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    /* para sa button sa may index na natibok tibok */
+   .pulse-button{
+
+        font-size: 18px;
+        width: 300px;
+        height: 39px;
+        border-radius: 40px;
+        animation: pulse 2s ease infinite;
+        background: #462a1b;
+        cursor: pointer;
+        
+   }
+    .button-container-div{
+        text-align: center;
+    }
+
+   @keyframes pulse{
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+   
+    50% {
+        transform: scale(0.7);
+        opacity: 0.8;
+    }
+   
+   
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

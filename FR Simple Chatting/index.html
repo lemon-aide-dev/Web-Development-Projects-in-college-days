@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FR!</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script rel="stylesheet" type="text/javascript"  href="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="designindex.css">
+
+    </style>
+</head>
+<body>  
+    <div class="container my-5">
+        <div class="container col-md-5 text-center">
+            <form class="container mx-2 " action="sendmessage.php" method="post">
+                <div class="container">
+
+                    <div style="background-color: rgb(61, 46, 40); border-top-left-radius: 15px; border-top-right-radius: 15px;" class="container p-3 text-light">
+                        <h2><b>SEND ANONYMOUS MESSAGE</b></h2>
+                    </div>
+
+                        <textarea id="floatingInput" class="container p-1" autofill="off" style="font-size: 20pt; margin: 0 auto;" name="message" rows="5" cols="3" placeholder="Your Message here"> 
+                        </textarea><br>
+                        
+                    <div class="container"></div>
+                        <label for="sndmsg"><h4 class="text-dark">Enter Reciever's Username</h4></label>
+                        <input type="text" id="floatingInput" name="sndmsg" onkeyup="manage(this)" onkeypress="return event.which !=32" autofill="off">
+                        <br><br>
+                    </div> 
+                        <button id="submit" class="btn text-light" type="submit" style="font-size:19px;border-radius: 40px; padding: 10px 32px; background-color:#5c3925 ;" disabled><b>Send</b></button>
+                              <script>
+                                function manage(){
+                                    var bt =  document.getElementById('submit');
+                        
+                                    var un =  document.getElementById('floatingInput');
+                                    
+
+                                    if(un.value != ''){
+                                        bt.disabled = false;
+                                    }else{
+                                        bt.disabled = true;
+                                    }
+
+                                }
+                              </script>
+                </div>
+              
+            </div>    
+
+            </form>
+            <div class="container" align="center">
+            <div  class="button-container-div">
+               &emsp; <a class="btn text-light pulse-button" href="login.html"><b>GET YOUR OWN MESSAGES</b></a>
+               <br>
+               <br>
+            </div> 
+            </div>          
+ </div>
+
+
+
+
+
+
+
+   
+	
+
+
+</body>
+	
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lng="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" scr="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="Designindex.css">
+    <link rel="stylesheet" href="script.js">
+
+    <title>Login</title>
+    <script>
+     function manage(){
+            var btn =  document.getElementById('sub');
+            var un =  document.getElementById('log-in');
+
+            if(un.value != ''){
+                btn.disabled = false;
+            }else{
+                btn.disabled = true;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container  my-5">
+        <div class="row justify-content-center align-items-center inner-row">
+            <div class=" col-md-5">
+                <div class="card form-box login-form p-md-5 p-3" >
+                    <div class="form-title">
+                        <h2 class="fw-bold mb-3"><center>Login</center></h2>
+                    </div>
+
+                    <form action="log.php"  >
+                        <div class="form-floating mb-3">
+                            <input type="text" id="log-in" autocomplete = "off" class="form-control form-control-sm" placeholder="Email" name="username" onkeypress="return event.which !=32" required>
+                            <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" id="log-in"  class="form-control form-control-sm"  placeholder="Password" name="password" onkeyup="manage(this)" required>
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="mt-3">
+                            <button id="sub" class="btn bg-dark text-light"  disabled >Log In</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-3 card-footer">
+                        <span>Don't have account?</span><a href="signup.html"> Sign Up</a>
+                        <br>
+                        <div class="mt-3">
+                            <span>Don't want to log in?</span> 
+                            <a href="index.html">Back</a>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+                
+            </div>
+        </div>
+        <br>
+                    <br>
+                  
+                    <br>
+        <!-- footer
+        <footer class="container container-fluid">
+           <img class = "logo float-end" src="logo2.png" width=100px height=100px>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="logo2.png" class="float-start"width=40px height=40px opacity=4>
+                        <h6>
+                            
+                            </i>
+                            <p class="copyright p-2 float-start">FR Inc. © 2023-ALL RIGHTS RESERVED</p>
+                        
+                            
+                        </h6>
+                        <div class="container float-start mx-5">
+                            <div class="row row-30">
+                                <div class="col-md-4 col-xl-5">
+                                        <h6>Contact Us at:</h6>
+                                        <p>FRSecret@gmail.com<br>FRSupport@gmail.com</p>
+                                        
+                                </div>
+                        </div>
+                            
+            
+                    </div>
+                </div>
+            </div>
+        </div></footer>-->
+</body>
+
+</html>

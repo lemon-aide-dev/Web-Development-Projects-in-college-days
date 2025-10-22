@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lng="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" type="text/javascript" href="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="designindex.css">
+    
+    <title>Sign-up</title>
+
+    <script>
+       /* function manage(txt){
+        var bt = document.getElementById('submit');
+        if(txt.value != ''){
+            bt.disabled = false;
+
+        }else{
+            bt.disabled = true;
+        }
+        }*/
+
+        function manage(){
+            var bt =  document.getElementById('submit');
+            var un =  document.getElementById('floatingInput');
+
+            if(un.value != '' ){
+                bt.disabled = false;
+            }else{
+                bt.disabled = true;
+            }
+
+        }
+
+       function loggedin(){
+        alert('Account Created!');
+       }
+    </script>
+
+</head>
+
+<body>
+    <div class="container my-2">
+            <div class="container card form-box registration-form p-md-5 " style="opacity:0.9;">
+                <div class="card-body form-title">
+                        <h2 class="fw-bold mb-3">Create Your Account</h2>
+                    </div>
+                    <form action="sign.php" method="POST" class="sign-up-form" id="signup">
+                        <div class="form-floating mb-3">
+                            <input type="text" autocomplete="off" class="form-control form-control-sm required" id="floatingInput" placeholder="Username" name="Username" required onkeypress="return event.which !=32">
+                            <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" autocomplete="off" class="form-control form-control-sm" id="floatingInput"placeholder="Nickname" name="Nickname">
+                            <label for="floatingInput">nickname</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" autocomplete="off" onkeyup="manage(this)" class="form-control form-control-sm required" id="floatingInput" placeholder="Password"  minlength="8" name="password" required>
+                            <label for="floatingInput">Password</label>
+                        </div>
+                         <div class="form-floating mb-3">
+                            <input type="password" autocomplete="off" onkeyup="manage(this)" class="form-control form-control-sm required" id="floatingInput" placeholder="Confirm Password"  minlength="8" name="conpassword" required>
+                            <label for="floatingInput">Confirm Password</label>
+                        </div>
+                        
+                        <div class="mt-3">  
+                                <button id="submit" type="submit" class="btn bg-dark text-light" disabled>SUBMIT</button>
+                        </div>
+                    </form>
+
+
+                    <div class=" card-footer mt-3">
+                        <span>Have already an account?</span>
+                        <a href="login.html">Log In</a>
+                        <div class="mt-3">
+                            <span>Wanna go back?</span> 
+                            <a href="index.html">Back</a>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+
+    
+    </body>
+</html>
