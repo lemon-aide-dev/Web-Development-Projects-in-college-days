@@ -260,17 +260,8 @@
 </html>
 
 <!--
-  1. Kurtson Magno - Developer
-  2. Roy Vincent Donila - Developer
-  3. Faisal Roxas - UI Designer
-  4. Jzen Kates Cruz - UI Designer
-  5. Lyca Erlyn Aborquez
-  6. Shaina Bernaldo
-  7. Earl Real
-  8. Jemerson Frias
-  9. Bryan Kevin Dalayon
-  10. Jocer Saranglao
-  11. Julia Mae Oliveros
-  12. Regine Dacillo
-  13. Keannu Charles Camingao
+  1. Kurt - Front-End Dev
+  2. Roy - Back-End Dev
+  3. Faisal - UI Designer / Front-End Dev
+  4. J-zen - UI Designer
  -->
